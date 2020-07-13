@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>sample.html</title>
+<script type="text/javascript">
+	function sam() {
+		opener.document.bgColor="orange";
+		//opener : 현재 윈도우를 연 부모 윈도우를 가리킴
+	}
+	
+	function send() {
+		var dong = window.document.frm1.dong.value;
+		opener.document.frmtest.address.value=dong;
+		
+		self.close(); //자신의 창 닫기
+	}
+	
+</script>
+</head>
+<body>
+	<A HREF="#" onclick="sam()">원래창의 배경색 바꾸기</A>
+	<form name="frm1">
+		주소 입력 : <input type="text" name="dong"> <input type="button"
+			value="확인" onclick="send();">
+	</form>
+
+</body>
+</html>

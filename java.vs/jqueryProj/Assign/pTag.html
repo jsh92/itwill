@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('p').addClass(function(idx){
+		return 'p'+'_'+(idx+1);
+		});
+		
+		//each
+		/* $('p').each(function(idx){
+			$(this).addClass('p'+(idx+1));
+		}); */
+		
+		$('input').click(function(){
+			alert($('#p_1').html());
+		});
+	});
+
+</script>
+<style type="text/css">
+.p_1{color:red;font-size:10pt;}
+.p_2{color:blue;font-size:20pt;}
+.p_3{color:green;font-size:30pt;}
+</style>
+</head>
+<body>
+
+	<p>jsp</p>
+	<p>spring</p>
+	<p>JQuery</p>
+	<br>
+	<input type="button" value="동적으로 생성된 id로 접근">
+	
+</body>
+</html>

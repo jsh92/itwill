@@ -1,0 +1,109 @@
+package com.thread.day1;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Scanner;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JProgressBar;
+import javax.swing.JTextField;
+
+import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
+
+public class Mythread2 extends JFrame implements ActionListener, Runnable{
+	JLabel lb;
+	JTextField tf;
+	JButton btStart;
+	JProgressBar bar;
+	// JProgressBar-상태바, 진행바
+	// - 현재 작업량의 상태 표시를 시각화해서 보여주는 컴포 넌트
+	Thread th; // 버튼 클릭시 작동할 쓰레드
+	
+	public Mythread2 () {
+		super("실습");
+		
+		init();
+		addEvent();
+		setSize(500, 500);
+		setVisible(true);
+	}
+
+	private void addEvent() {
+		
+	}
+
+	private void init() {
+		setDefaultCloseOperation(JOptionPane.CANCEL_OPTION);
+		lb = new JLabel("메모");
+		tf = new JTextField(20);
+		btStart = new JButton("시작");
+		bar = new JProgressBar(JProgressBar.HORIZONTAL, 0, 100); // 0과 100이 최소값, 최대값
+		bar.setStringPainted(true);// 진행바에 퍼센티지가 표시됨
+
+		add(lb);
+		add(tf);
+		add(btStart);
+		add(bar);
+		
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// 0123456789
+		// 920125-1112222
+		String str = JOptionPane.showInputDialog("주민번호를 입력하세요");
+		String jy = str.substring(0, 2);
+		String jm = str.substring(2, 4);
+		String jd = str.substring(4, 6);
+		String jgen = str.substring(7, 8);
+		if(str.contains("-")==false) {
+			System.out.println("잘못 입력하셨습니다");
+			return;
+		}
+		String gender = null;
+		if (jgen.equals("1") || jgen.equals("2")) {
+			jy = "19" + jy;
+		} else {
+			jy = "20" + jy;
+		}
+
+		if (jgen.equals("1") || jgen.equals("3")) {
+			gender = "남자";
+		} else {
+			gender = "여자";
+		}
+
+		int yy = Integer.parseInt(jy);
+		int mm = Integer.parseInt(jm);
+		int dd = Integer.parseInt(jd);
+
+		System.out.println("생일: "+yy+"-"+mm+"-"+dd);
+		System.out.println("성별: "+gender);
+
+	}
+
+
+	@Override
+	public void run() {
+		
+	}
+
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+
+}
+class MyThread extends Thread{
+	String site;
+	
+	
+	public MyThread(String site) {
+		this.site=site;
+	}
+	
+}

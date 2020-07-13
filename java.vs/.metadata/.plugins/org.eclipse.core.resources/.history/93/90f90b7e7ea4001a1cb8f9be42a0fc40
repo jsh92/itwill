@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	});
+</script>
+<style>
+div, a {
+	padding: 10px;
+	border: 1px solid gray;
+}
+</style>
+
+</head>
+<body>
+	<div>
+		<a href="http://www.naver.com">naver</a>
+	</div>
+
+
+</body>
+</html>

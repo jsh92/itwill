@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var ua=navigator.userAgent;
+		var uaLower=ua.toLowerCase();
+		console.log(ua+", 소문자로: " + uaLower);
+		
+		var result="";
+		if(uaLower.indexOf("trident")!=-1){
+			result="Explorer입니다";
+		}else{
+			result="Explorer가 아닙니다";
+		}
+		console.log("위치 : "+uaLower.indexOf("trident"));
+		
+		document.getElementById("div1").innerHTML=result;
+	}
+</script>
+</head>
+<body>
+	<h1>브라우저 판별</h1>
+	<div id="div1"></div>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	function rel() {
+		today = new Date();
+		document.myForm.myClock.value = today.toLocaleString();
+
+	}
+	function el() {
+		location.reload()
+	}
+	
+	setInterval('rel()', 3000);
+	setInterval('el()', 9000);
+</script>
+</head>
+<body>
+
+	<FORM NAME="myForm">
+		현재시간은 <INPUT NAME="myClock" TYPE="Text" SIZE=30>
+	</FORM>
+
+</body>
+</html>

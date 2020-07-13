@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.box{
+		width: 100px;
+		height: 100px;
+		position: absolute; 
+	}
+	.box:first-of-type {
+		background: red;
+		left:10px;
+		top: 10px;
+		z-index: 100;  /* 값이 클수록 위로 올라옴 */
+	}
+	.box:nth-of-type(2) {
+		background: blue;
+		left:50px;
+		top: 50px;
+		z-index: 10;
+	}
+	.box:nth-of-type(3) {
+		background: green;
+		left:90px;
+		top: 90px;
+		z-index: 1;		
+	}
+	
+	body > div{
+		width: 400px;
+		height: 100px;
+		border: 3px solid gray;
+		position: relative; 
+		/* overflow: hidden; */ /* 영역을 벗어나는 부분을 보이지 않게 만든다 */				
+		/* 내부의 요소가 부모의 범위를 벗어날 때 어떻게 처리할지 지정하는 속성 */
+		overflow: auto;
+	}
+	
+	/* 1) 자손의 position 속성을 absolute 키워드로 적용하면 
+	부모에게 height 속성을 입력함
+	- 부모 태그가 영역을 차지하게 만들 수 있음 
+	
+	2) 자손의 position을 absolute 로 적용하면 
+	부모의 position을 relative로 적용함
+	- 자손 태그가 부모의 위치를 기준으로 이동함*/
+	
+</style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor amet</h1>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor amet</h1>
+
+
+</body>
+</html>

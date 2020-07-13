@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	//배열
+	var colorArr = new Array(3);
+	
+	colorArr[0] = "red";
+	colorArr[1] = "blue";
+	colorArr[2] = "green";
+	
+	for(var i=0;i<colorArr.length;i++){
+		document.write(colorArr[i]+"<br>");
+	}
+	
+	var arr = [10,20,40,70];
+	document.write("<hr>");
+	for(var i=0;i<arr.length;i++){
+		document.write(arr[i]+"<br>");
+	}
+	
+	//난수발생하여 명언보여주기
+	document.write("<hr>");
+	var msg = new Array(5);
+	msg[0] = "너 자신을 알라";
+	msg[1] = "불가능은 대개 시도하지 않기 때문이다";
+	msg[2] = "삶을 변화시키려면 지금 당장 시작하라";
+	msg[3] = "행복의 비결은 좋아하는 일을 해서가 아니라 해야 하는 일을 좋아하기 때문이다.";
+	msg[4] = "인간이 실패하는 이유는 단 하나, 자기 자신에 대한 진정한 믿음이 부족하기 때문이다.";
+
+	var num = Math.floor(Math.random() * 5);
+	document.write(msg[num]);
+
+</script>
+</body>
+</html>
+
+
+
+

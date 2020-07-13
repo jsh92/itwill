@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>findTest.html</title>
+<style type="text/css">
+.error {
+	color: red;
+	font-size: 0.8em;
+}
+</style>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.error').hide();
+		$('.submit').click(function() {
+			/* var count = $('input[name=lang]:checked').length;
+			console.log(count); */
+			var count=0;
+			$('#signup').find('input[name=lang]').each(function(){
+				if($(this).is(':checked')){
+					count++;
+				}
+			});
+			if (count == 0) {
+				$('.error').show();
+				event.preventDefault();//이벤트 진행을 막는다
+			} else {
+				$('.error').hide();
+			}
+		});
+
+	});
+</script>
+</head>
+<body>
+	<form id="signup" method="post" action="a.jsp">
+		<label><input type="checkbox" name="lang" value="1">java</label>
+		<label><input type="checkbox" name="lang" value="2">jsp</label>
+		<label><input type="checkbox" name="lang" value="3">oracle</label>
+		<span class="error">하나라도 체크하셔야 합니다</span> <br> <br> <input
+			class="submit" type="submit" value="전송">
+	</form>
+
+
+</body>
+</html>

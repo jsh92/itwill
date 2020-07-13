@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		color: blue;
+		background: yellow;
+	}
+	
+	/* 부모 요소인 <body>태그의 스타일이 자식 요소인 <h2>,<p>태그에도 그대로 적용됨 
+	스타일의 모든 속성이 부모 요소에서 자식 요소로 상속되는 것은 아님
+	- 배경색이나 배경 이미지는 상속되지 않음	
+	*/
+	
+	.accent{
+		color: red;
+	}
+	.accent{
+		color:green;
+	}	
+	/* 스타일은 단계적으로 적용됨
+	- 하나의 요소에 여러 스타일 규칙이 정의되어 있다면 가장 나중에 정의된 스타일을 적용함 */
+</style>
+</head>
+<body>
+	<h2>h2 태그</h2>
+	<p>p 태그</p>
+	<h3 class="accent">h3 태그</h3> <!-- 나중에 정의된 green색이 적용 -->
+</body>
+</html>

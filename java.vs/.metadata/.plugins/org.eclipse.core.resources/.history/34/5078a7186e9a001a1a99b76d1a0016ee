@@ -1,0 +1,21 @@
+package com.thread.day1;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Mythread2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// 0123456789
+		// 920125-1112222
+		String str = JOptionPane.showInputDialog("주민번호를 입력하세요");
+		String jy = str.substring(0, 2);
+		String jm = str.substring(2, 4);
+		String jd = str.substring(4, 6);
+		String jgen = str.substring(6, 7);
+
+	}
+
+}

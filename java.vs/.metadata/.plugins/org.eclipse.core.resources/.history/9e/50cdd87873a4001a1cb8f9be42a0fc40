@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	});
+</script>
+
+<style type="text/css">
+.error {
+	color: red;
+	font-size: 0.8em;
+}
+</style>
+</head>
+<body>
+
+	<form id="signup" method="post" action="a.jsp">
+		<div>
+			<label class="label" for="userid">User Id *</label> <input
+				type="text" class="infobox" id="userid" /> <span class="error">필수
+				입력항목입니다</span>
+		</div>
+		<div>
+			<label class="label" for="pwd">Password *</label> <input
+				type="password" class="infobox" id="pwd" /> <span class="error">필수
+				입력항목입니다</span>
+		</div>
+		<div>
+			<label class="label" for="name">Name *</label> <input type="text"
+				class="infobox" id="name" /> <span class="error">필수 입력항목입니다</span>
+		</div>
+		<input id="submit1" type="submit" value="전송">
+	</form>
+
+
+
+</body>
+</html>

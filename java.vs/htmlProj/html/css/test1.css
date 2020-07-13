@@ -1,0 +1,22 @@
+@charset "EUC-KR";
+/* css/test1.css */
+
+/* [3] 외부 스타일 파일 이용 
+		선택자{
+			속성1:값1;
+			속성2:값2;
+		}	
+*/
+
+	h2{
+		color:orange;
+		background: skyblue;
+	}
+	
+	div{
+		color: pink;
+		background: silver;
+	}
+	
+	
+	

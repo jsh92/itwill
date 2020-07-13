@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	#div1 h1:first-of-type {
+		color: red;
+	}
+	#div1 h2:first-of-type {
+		color: red;
+	}
+	#div1 h3:first-of-type {
+		color: red;
+	}
+	
+	div{
+		border: 1px solid gray;
+		width:500px;
+		height: 360px;
+		margin: 10px;
+	}
+	
+	.sel > *:first-of-type {
+		color: green;
+	}
+</style>
+</head>
+<body>
+	<div id="div1">
+	    <h1>Header - 1</h1>
+	    <h2>Header - 2</h2>
+	    <h3>Header - 3</h3>
+	    <h3>Header - 3</h3>
+	    <h2>Header - 2</h2>
+	    <h1>Header - 1</h1>		
+	</div>
+	
+	<div class="sel">
+	   <h1>Header - 1</h1>
+	   <h2>Header - 2</h2>
+	   <h3>Header - 3</h3>
+	   <h4>Header - 4</h4>
+	   <h5>Header - 5</h5>
+	   <h6>Header - 6</h6>		
+	</div>
+</body>
+</html>

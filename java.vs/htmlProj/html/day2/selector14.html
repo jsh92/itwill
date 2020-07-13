@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 전후문자 선택자 */
+	p{
+		counter-increment: rint;
+	}
+	p::before {  /* 태그 앞에 위치하는 공간을 선택함 */	
+		content: counter(rint) ".";
+	}
+	p::after {  /* 태그 뒤에 위치하는 공간을 선택함 */	
+		content: " - " attr(data-page) "page";
+	}
+	/*  하지만 속성 앞에 문자열 data-를 붙이면 사용자 지정 속성으로 인정해줌
+		   특정한 정보를 넣기 위해 사용자 지정 속성인 data-page 속성을 사용
+	 */
+	p::first-letter {
+		font-size: 3em;
+	}
+</style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p data-page="52">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p data-page="273">Aenean ac erat et massa vehicula laoreet consequat et sem.</p>
+
+</body>
+</html>

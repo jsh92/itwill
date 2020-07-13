@@ -1,0 +1,21 @@
+package com.day22.collection;
+import java.util.ArrayList;
+public class GenericArrayListpg18 {
+
+	public static void main(String[] args) {
+		ArrayList<Double>list = new ArrayList<Double>(3);
+		
+		list.add(12.3);
+		list.add(23.1);
+		list.add(22.2);
+		
+		for(int i=0;i<list.size();i++) {
+			double d=list.get(i);
+			System.out.println(d);
+		}
+		
+		
+		
+	}
+
+}

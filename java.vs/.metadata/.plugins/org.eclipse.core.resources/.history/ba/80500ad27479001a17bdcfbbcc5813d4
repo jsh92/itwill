@@ -1,0 +1,37 @@
+package com.day22.collection;
+import java.util.ArrayList;
+public class GenericArrayListpg18 {
+
+	public static void main(String[] args) {
+		ArrayList<Double>list = new ArrayList<Double>(3);
+		
+		list.add(12.3);
+		list.add(23.1);
+		list.add(22.2);
+		
+		for(int i=0;i<list.size();i++) {
+			double d=list.get(i);
+			System.out.println(d);
+		}
+		for(double n :list) {
+			System.out.println(n);
+		}
+		
+		ArrayList<String>sList = new ArrayList<String>(5);
+		
+		for(int i=0;i<sList.size();i++) {
+			sList.add(i +": Hello Java");
+		}
+		for(String n : sList) {
+			System.out.println(n);
+		}
+		
+		for(int i=0;i<sList.size();i++) {
+			String str=sList.get(i);
+			System.out.println(str);
+		}
+		
+		
+	}
+
+}

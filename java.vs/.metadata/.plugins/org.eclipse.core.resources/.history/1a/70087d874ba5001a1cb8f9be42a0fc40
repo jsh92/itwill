@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>ui/datepickerTest.html</title>
+<link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+
+<script type="text/javascript" src="../../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#startDay').datepicker();
+		
+	});
+</script>
+</head>
+<body>
+<input type="text" name="startDay" id="startDay">
+<br>
+<button>버튼</button>
+
+</body>
+</html>

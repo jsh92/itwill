@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font-family: dotum;
+	color: #666;
+}
+
+form {
+	width: 500px;
+	position: relative;
+}
+
+fieldset {
+	width: 90%;
+	padding: 0;
+	margin: 0 auto;
+	border: 0;
+	border-top: 2px solid #7AA3EB;
+	border-bottom: 2px solid #7AA3EB;
+}
+
+legend {
+	font-weight: bold;
+	color: #7AA3EB;
+	padding: 10px 0;
+}
+
+
+.label {
+	width: 20%;
+	float: left;
+	text -align: right;
+	padding: 3px 10px 0 0;
+	clear: left;
+	font -size: 0.75em;
+	font -weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+	width: 35%;
+	height: 1.1em;
+	font -size: 0.75em;
+	border: 1px solid #DCDDE3;
+}
+
+input[type="submit"] {
+	padding: 2px 10px;
+	font -weight: bold;
+	color: #CD1076;
+}
+
+textarea {
+	width: 70%;
+	border: 1px solid #DCDDE3;
+}
+
+.submitBtn {
+	border: 0;
+	text -align: center;
+}
+div.button{
+   margin: auto;
+   width: 50%;
+   padding: 15px;
+}
+</style>
+
+</style>
+</head>
+<body>
+	<form action="" id="">
+		<legend>글쓰기</legend>
+		<fieldset>
+			<p>
+				<label for="title" class="label"><strong>제목</strong></label><input
+					type="text" id="title" />
+			</p>
+			<hr>
+			<p>
+				<label for="writer" class="label"><strong>작성자</strong></label>
+				<input type="text" id="writer" />
+			</p>
+			<hr>
+			<p>
+				<label for="uPass" class="label"><strong>비밀번호</strong></label>
+				<input type="password" id="uPass" />
+			</p>
+			<hr>
+			<p>
+				<label for="eMail" class="label"><strong>E-mail</strong></label>
+				<input type="text" id="eMail" />
+			</p>
+			<hr>
+			<p>
+				<span class="label"><strong>내용</strong></span>
+				<textarea cols="30" rows="10"></textarea>
+			</p>
+			<div class="button">
+				<input type="submit" value="등록" />
+				<input type="button" value="글목록" />
+			</div>
+		
+		</fieldset>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+package com.day22.collection;
+
+import java.util.ArrayList;
+
+public class ArrayListTest {
+
+	public static void main(String[] args) {
+		/*
+		컬렉션 프레임워크
+		- 데이터 그룹을 저장하기 위한 클래스들의 표준화한 설계
+		- 메모리 크기를 동적으로 확장할 수 있다
+		- 저장, 검색, 삭제 등의 메서드 제공
+		
+		컬렉션 인터페이스 3종류
+		[1]List
+		순서가 유지되고, 중복 허용
+		구현 클래스: ArrayList, Vector
+		
+		[2]Set
+		순서가 유지 되지 않고, 중복이 불허
+		구현 클래스: HasSet,
+		
+		[3]Map
+		키와 값 쌍으로 저장되는 데이터 집합
+		순서가 유지되지 않고, 키는 중복이 불가능하며, 값은 중복이 가능하다
+		구현 클래스: HasMap, Hashtable,Properties
+
+		 */
+		//저장
+		ArrayList list = new ArrayList(3);
+		list.add(new Integer(10));
+		
+		//add(Object obj) <= 매개변수에 Object의 지식객체를 넣어준다
+		list.add(new Integer(20)); //boxing-기본형을 참조현인 Wrapper클래스로 변환하는 것
+		
+		list.add(35);//jdk.5.0부터는 기본자료형을 넣을 수 있게 됨
+		//=> AutoBoxing : 자동으로 기본형을 참조형으로 변환해줌
+		
+		//2. 검색(데이터 읽어오기)
+		for(int i=0;i<list.size();i++) {
+			Object obj=list.get(i);
+			Integer n = (Integer)obj;// Down-Casting
+			int k = n.intValue();//integer => int
+			System.out.println(i+ "번째요소 : "+ k);
+		}
+		
+		System.out.println("\nlist의 실제 데이터 개수: "+list.size());
+		
+		
+		
+	}
+
+}

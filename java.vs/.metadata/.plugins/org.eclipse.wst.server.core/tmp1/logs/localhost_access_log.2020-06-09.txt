@@ -1,0 +1,13 @@
+127.0.0.1 - - [09/Jun/2020:10:20:32 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:20:36 +0900] "GET /herbmall/board/write.jsp HTTP/1.1" 200 1590
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:20:36 +0900] "GET /herbmall/css/mystyle.css HTTP/1.1" 200 253
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:20:36 +0900] "GET /herbmall/css/mainstyle.css HTTP/1.1" 200 1325
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:20:36 +0900] "GET /herbmall/css/formLayout.css HTTP/1.1" 200 1942
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:20:36 +0900] "GET /herbmall/css/clear.css HTTP/1.1" 200 422
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:20:36 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:21:00 +0900] "GET /herbmall/board/list.jsp HTTP/1.1" 200 2215
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:21:00 +0900] "GET /herbmall/css/formLayout.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:21:00 +0900] "GET /herbmall/css/mainstyle.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:21:00 +0900] "GET /herbmall/css/clear.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:21:00 +0900] "GET /herbmall/css/mystyle.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:10:21:00 +0900] "GET /favicon.ico HTTP/1.1" 404 818

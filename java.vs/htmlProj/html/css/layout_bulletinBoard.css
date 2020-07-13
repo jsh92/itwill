@@ -1,0 +1,38 @@
+@charset "EUC-KR";
+
+body {
+	border: 1px solid #333;
+	width: 600px;
+	height: 280px;
+	margin: 0 auto;
+}
+
+table {
+	border: 1px solid gray;
+	border-collapse: collapse;
+	margin-left: 10px;
+	text-align: center;
+}
+
+thead tr th {
+	border: 1px solid gray;
+	background: gray;
+}
+tbody tr td{
+	border: 1px solid gray;
+}
+h4{
+	display : inline-block;
+	margin-left: 10px;
+}
+
+#btn{
+	margin-left: 100px;
+	margin-top: 20px;
+}
+p{
+	margin-left: 530px;
+}
+#pageNum{
+	margin-left: 20%;
+}

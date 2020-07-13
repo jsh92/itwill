@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>constructorTest.html</title>
+</head>
+<body>
+<script type="text/javascript">
+	//생성자
+	function Student(name, kor,math,eng){
+		//속성
+		this.name=name;
+		this.kor=kor;
+		this.math=math;
+		this.eng=eng;
+		
+		//메서드
+		this.getSum=function(){
+			return this.kor+this.math+this.eng;
+		}
+		
+		this.getAverage=function(){
+			return this.getSum()/3.0;
+		}
+		
+		this.toString=function(){
+			return this.name+" : " + this.getSum()+", " 
+				+ this.getAverage();
+		}
+	}
+	
+	//객체 생성
+	var st = new Student('홍길동',100,99,97);
+	var str=st.toString();  //메서드 호출
+	alert(str);
+	
+	//배열에 여러 객체 저장
+	var students = [];
+	students.push(new Student('김길동',95,85,75));
+	students.push(new Student('이길동',99,89,79));
+	students.push(new Student('정길동',91,82,73));
+	
+	var output="";
+	for(var i=0;i<students.length;i++){
+		output+=students[i].toString()+"\n";
+	}
+	
+	alert(output);
+	
+    // 인스턴스를 생성
+    var student = new Student('홍길동', 96, 98, 92);
+
+    alert(student instanceof Student); //true
+    alert(student instanceof Number);  //false
+    alert(student instanceof String);  //false
+    alert(student instanceof Boolean); //false
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function getGrade() {
+		var avg = document.frmScore.avg.value;
+		
+		var grade="";
+		if(avg>=90){
+			grade='A';
+		}else if(avg>=80){
+			grade='B';
+		}else if(avg>=70){
+			grade='C';
+		}else if(avg>=60){
+			grade='D';
+		}else{
+			grade='F';
+		}
+		
+		document.frmScore.grade.value=grade;
+	}
+	
+	function getGrade2(form) {
+		var avg = form.avg.value;
+		
+		var grade="";
+		if(avg>=90){
+			grade='A';
+		}else if(avg>=80){
+			grade='B';
+		}else if(avg>=70){
+			grade='C';
+		}else if(avg>=60){
+			grade='D';
+		}else{
+			grade='F';
+		}
+		
+		form.grade.value=grade;
+	}
+</script>
+</head>
+<body>
+	<H3>학점 구하기</H3>
+	<hr>
+	<FORM NAME="frmScore">
+		평균 점수 입력 <INPUT TYPE="text" name="avg">
+		<P>
+			<INPUT TYPE="button" value="학점구하기" onClick="getGrade()"> 학점 :
+			<INPUT TYPE="button" value="학점구하기2" onClick="getGrade2(this.form)"> 학점 :
+			<INPUT TYPE="text" name="grade" size="15">
+		<p>
+	</FORM>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var mywin;
+	
+	mywin=open("",'win',
+		'width=300,height=300,left=0,top=20,location=yes,resizable=yes');
+	mywin.document.write("이 창은 2초 후에 자동으로 닫힙니다.");
+	
+	setTimeout("mywin.close()", 2000);
+	//지정한 시간 후에 해당 함수를 실행
+	//1번만 실행함
+</script>
+</head>
+<body>
+	<h1>부모 창</h1>
+</body>
+</html>
+
+
+
+
+

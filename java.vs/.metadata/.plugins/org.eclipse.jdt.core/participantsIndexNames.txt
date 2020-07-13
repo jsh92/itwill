@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4018349478.index
+\myStudy\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2417197403.index
+\myStudy\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1668436155.index
+\mystudy\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2700131054.index
+\herbmall\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4105860451.index
+\myStudy\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1840456921.index
+\myStudy\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4202365185.index
+\mystudy\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3982895422.index
+\mystudy\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3063412559.index
+\mystudy\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\49850133.index
+\itWill\src
+D:\lecture\java\workspace.list\java.vs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3877446718.index
+\advanced\src

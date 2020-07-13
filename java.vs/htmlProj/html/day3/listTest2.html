@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.out{
+		list-style-type:square;
+		list-style-position: outside;   /* 기본값 */
+	}
+	.in{
+		list-style:circle;
+		list-style-position: inside;   
+	}
+	.navi ul{
+		list-style-image: url("../image/bullet.png");
+	}
+</style>
+</head>
+<body>
+	<nav class="navi">
+		<ul>
+			<li><a href="desk.html">이용 안내</a></li>
+			<li><a href="room.html">객실 소개</a></li>
+			<li><a href="intro.html">예약 방법 및 요금</a></li>
+			<li><a href="reservation.html">예약하기</a></li>
+		</ul>
+	</nav>
+	<section class="content">
+		<h2>예약 방법 및 요금</h2>
+		<article>
+			<h3>¤ 요금</h3>
+			<ul>
+				<li class="out">1인: 40,000원</li>
+				<li class="out">2인: 60,000원</li>
+				<li class="out">3인: 80,000원</li>
+				<li class="in">4인: 100,000원</li>
+				<li class="in">5인: 120,000원</li>
+				<li class="in">6인: 140,000원</li>
+			</ul>
+		</article>
+	</section>
+</body>
+</html>

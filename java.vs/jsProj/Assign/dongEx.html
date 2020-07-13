@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function winOpen() {
+		var dong = window.document.frm1.dong.value;
+		opener.document.fm1.address.value=dong;
+		
+		self.close(); //자신의 창 닫기
+	}
+</script>
+</head>
+<body>
+	<form name="frm1">
+	동 입력 : <input type="text" size="15" name="dong"> <input type="button" value="확인" onclick="winOpen();">
+	</form>
+
+</body>
+</html>

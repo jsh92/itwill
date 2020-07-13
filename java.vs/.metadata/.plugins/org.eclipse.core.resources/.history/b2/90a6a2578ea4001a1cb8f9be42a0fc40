@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	});
+</script>
+<style type="text/css">
+	.label {float: left; width: 100px; }
+	.error { color: red; padding-left: 10px; }
+	.submit { margin-left: 125px; margin-top: 10px;} 
+</style>    
+
+</head>
+<body>
+	<form id="frm1" method="post" action="event5.jsp">
+	<div>	<label class="label" for="userid">아이디 *</label>
+		<input type="text" name="userid" id="userid"/>
+		<span class="error">반드시 값을 입력하셔야 합니다!</span>	</div>
+	<input class="submit" type="submit" value="전송">
+	</form>
+</body>
+</html>

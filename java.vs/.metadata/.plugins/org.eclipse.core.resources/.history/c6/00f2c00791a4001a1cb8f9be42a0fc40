@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//[1] lblError 레이어 클리어
+		$('#txtPwd').keyup(function() {
+			//$('#lblError').text(''); // 클리어
+			$('#lblError').hide();
+		});
+		//[2] 암호 확인 기능 구현
+		$('#txtPwdConfirm').keyup(function() {
+			if ($('#txtPwd').val() != $('#txtPwdConfirm').val()) {
+				$('#lblError').show();
+				$('#lblError').html("<b>비밀번호가 틀립니다.</b>"); // 레이어에 HTML 출력
+			} else {
+				$('#lblError').show();
+				$('#lblError').html("<b>비밀번호가 맞습니다.</b>");
+			}
+		});
+	});
+</script>
+
+</head>
+<body>
+	비밀번호:
+	<input type="password" id="txtPwd" size="20">
+	<br /> 비밀번호 확인:
+	<input type="password" id="txtPwdConfirm" size="20">
+	<br />
+	<input type="button" id="btnOK" value="확인" />
+	<div id="lblError" style="color: red">암호를 입력하시오.</div>
+
+
+
+</body>
+</html>

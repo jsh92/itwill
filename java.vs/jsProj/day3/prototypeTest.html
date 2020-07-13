@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>prototypeTest.html</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//생성자
+		function Student(name, kor, math, eng) {
+			//속성
+			this.name = name;
+			this.kor = kor;
+			this.math = math;
+			this.eng = eng;
+
+		}
+		//메서드
+		Student.prototype.getSum = function() {
+			return this.kor + this.math + this.eng;
+		}
+
+		Student.prototype.getAverage = function() {
+			return this.getSum() / 3.0;
+		}
+
+		Student.prototype.toString = function() {
+			return this.name + " : " + this.getSum() + ", " + this.getAverage();
+		}
+		/* 프로토타입-생성자 함수로 생성된 객체가 공통으로 가지는 공간
+		
+		 생성자 함수로 객체를 만들 때는 생성자 함수 내부에 속성만 넣음
+		 메서드는 모두 프로토타입 안에 넣어줌
+		 */
+
+		//배열에 여러 객체 저장
+		var students = [];
+		students.push(new Student('김길동', 95, 85, 75));
+		students.push(new Student('이길동', 99, 89, 79));
+		students.push(new Student('정길동', 91, 82, 73));
+
+		var output = "";
+		for (var i = 0; i < students.length; i++) {
+			output += students[i].toString() + "\n";
+		}
+
+		alert(output);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+/* 
+with(객체){
+	
+} 
+
+ - with(객체)에서 지정한 객체는 { } 내에서 생략하고 사용할 수 있음
+ - 반복적으로 특정한 객체명을 자주 사용하는 경우에 유용하게 사용됨
+ */
+	with(document){
+		write("one!<br>"); 
+		write("two!<br>"); 
+ 	} 
+ 
+ 	//new - 객체 생성
+ 	var d = new Date();
+ 	var month = d.getMonth()+1;
+ 	
+ 	document.write((d.getYear()+1900) +"-" + month+"-"
+ 			+ d.getDate()+"<br>");
+ 	
+ 	//this - 자기자신을 가리킴
+</script>
+
+</body>
+</html>
+
+

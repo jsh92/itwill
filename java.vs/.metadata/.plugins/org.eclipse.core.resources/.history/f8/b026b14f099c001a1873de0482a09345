@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.box2{
+		width: 300px;
+		border: 1px solid red;
+		border-collapse: collapse;		
+		/* border-collapse
+ 			- collapse : 셀의 테두리선을 겹쳐서 표시
+ 			- separate: 셀의 테두리선 분리(기본값)
+		 */
+	}
+	
+	.box2 th{
+		border: 1px solid blue;
+	}
+	.box2 td{
+		border: 1px solid orange;
+	}
+</style>
+</head>
+<body>
+<TABLE class="box2">
+<TR>
+	<Th>제목1</Th>
+	<Th>제목2</Th>
+	<Th>제목3</Th>
+</TR>
+<TR>
+	<TD>1</TD>
+	<TD>2</TD>
+	<TD>3</TD>
+</TR>
+<TR>
+	<TD>4</TD>
+	<TD>5</TD>
+	<TD>6</TD>
+</TR>
+</TABLE>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function changeColor() {
+		document.getElementById("targetId").style.color = "red";
+	}
+	
+	function change2(){
+		var langEl = document.getElementById("lang");
+		//var liEls = langEl.getElementsByTagName("li");
+		var liEls = document.getElementsByTagName("li");
+		//document로 할 경우 id=lang만 적용 되는 것이 안리ㅏ 전부가 적용이 된다
+		for(i=0;i<liEls.length;i++){
+			liEls[i].style.color="blue";
+		}
+		
+	}
+</script>
+</head>
+<body>
+	<h1 id="targetId">DOM이란</h1>
+	<button onclick="changeColor();">색상 변경하기</button>
+	<button onclick="change2();">목록 색 변경하기</button>
+
+	<hr>
+	<ul id="lang">
+		<li>java</li>
+		<li>jsp</li>
+		<li>oracle</li>
+	</ul>
+
+
+	<hr>
+	<ul>
+		<li>java</li>
+		<li>jsp</li>
+		<li>oracle</li>
+	</ul>
+
+	<table width="500" border="1">
+		<tr>
+			<td>제목1</td>
+			<td>제목2</td>
+		</tr>
+		<tr onmousemove="this.style.background='skyblue';this.style.cursor='pointer'" 
+			onmouseout="this.style.background=''" >
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr onmousemove="this.style.background='red';this.style.cursor='pointer'" 
+			onmouseout="this.style.background=''" >
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+	</table>
+</body>
+</html>

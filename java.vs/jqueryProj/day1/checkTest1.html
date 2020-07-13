@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#btn1').click(function(){
+			var num = $('input[name=num]:checked').val();
+			//checked된것만 선택
+			
+			//var sel = $('#sel1 > option:selected').val();
+			var sel=$('#sel1').val();
+			//selected된것만 선택
+			
+			var output="<h1>체크된 값: "+num+", 선택한 과일: "+sel +"</h1>";
+			$('#div1').html(output);
+			//$('#div1').text(output);
+			
+		});
+	});
+</script>
+</head>
+<body>
+	<input id="rd1" type="radio" name="num" value="one">하나
+	<input id="rd2" type="radio" name="num" value="two" checked>둘
+	<br>
+	<br>
+	<select id="sel1">
+		<option value="1">사과</option>
+		<option value="2">귤</option>
+		<option value="3" selected>배</option>
+	</select>
+	<input id="btn1" type="button" value="버튼" />
+	<h2>결과</h2>
+	<div id="div1"></div>
+</body>
+</html>

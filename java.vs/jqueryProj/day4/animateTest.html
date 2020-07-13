@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div').hover(function(){
+			$(this).animate({left:300, width:'140px', opacity:0.3}, 2000);	
+		}, function(){
+			$(this).animate({left:0, width:'70px', opacity:1}, 2000);	
+		});
+		
+	});
+</script>
+	<style>
+        div {
+            width: 70px; height: 70px;
+            background-color: skyblue;
+            position: relative;
+        }
+	</style>
+
+</head>
+<body>
+	<div></div>
+
+
+</body>
+</html>

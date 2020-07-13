@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function rel(){
+		location.reload();	
+	}
+	
+	/* function showTime(){
+		var d = new Date;
+		document.getElementById("curTime").innerHTML 
+			= d.toLocaleString(); 
+	}
+	
+	window.onload=showTime; */
+	
+	window.onload = function(){
+		var d = new Date;
+		document.getElementById("curTime").innerHTML 
+			= "<b>"+d.toLocaleString()+"</b>"; 
+	}
+	//=> 웹 브라우저의 모든 객체가 로드됐을 때 함수를 실행
+	
+	//window 객체가 로드가 완료되는 때
+	//- HTML 페이지에 존재하는 모든 태그가 화면에 올라가는 순간이 로드가 완료되는 순간임
+
+</script>
+</head>
+<body>
+	<H2> Location 객체 메소드 예제 </H2>
+	<FORM>
+		<INPUT TYPE="button" VALUE="문서 다시 읽기" onClick="rel()"><p>
+		
+	</FORM>
+	<div id="curTime"></div>
+
+</body>
+</html>

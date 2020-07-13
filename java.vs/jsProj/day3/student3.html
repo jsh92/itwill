@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function makeStudent(p_name, p_kor, p_math, p_eng) {
+			var willReturn = {
+				// 속성
+				name : p_name,
+				kor : p_kor,
+				math : p_math,
+				eng : p_eng,
+
+				// 메서드
+				getSum : function() {
+					return this.kor + this.math + this.eng;
+				},
+				getAverage : function() {
+					return this.getSum() / 3;
+				},
+				toString : function() {
+					return this.name + '\t' + this.getSum() + '\t'
+							+ this.getAverage();
+				}
+			};
+
+			return willReturn;
+		}
+		
+		var students = [];
+		students.push(makeStudent('홍길동',90,80,70));
+		students.push(makeStudent('김길동',91,82,75));
+		students.push(makeStudent('이길동',92,83,76));
+		students.push(makeStudent('강길동',93,85,79));
+		
+		var output="";
+		for(var i=0;i<students.length;i++){
+			output+= students[i].toString()+"\n";
+		}
+		
+		alert(output);
+	</script>
+</body>
+</html>
+
+
+
+
+
+

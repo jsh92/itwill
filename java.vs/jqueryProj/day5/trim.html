@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var s = '  hello  jquery!!  ';
+		var result = "["+s+"]<br>"
+			+ "길이:"+ s.length +"<br>"
+			+ "trim 후 ["+ $.trim(s)+"]<br>"
+			+ "trim 후 길이 : " + $.trim(s).length;
+			
+			$('#info').html(result);
+	});
+</script>
+</head>
+<body>
+	<div id="info"></div>
+	
+</body>
+</html>
+
+
+
+

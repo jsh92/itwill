@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div img').css('width','200');
+		
+		setInterval(function(){
+			$('img:first').appendTo('div');
+			// appendto 이기 때문에 div 안에서 맨 마지막으로 붙여 넣어진다
+			
+		}, 1000);
+				
+	});
+</script>
+</head>
+<body>
+    <div>
+      <img src="../images/dog.jpg" />
+      <img src="../images/magnum1.jpg" />
+      <img src="../images/snow.jpg" />
+    </div>
+
+</body>
+</html>
+

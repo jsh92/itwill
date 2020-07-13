@@ -1,0 +1,6 @@
+@charset "EUC-KR";
+table{
+	position: relative;
+	top : 60px;
+	left: 100px;
+}

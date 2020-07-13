@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+		<style>
+			p::selection { background: black; color: red; }
+			/* ::selection 사용자가 드래그한 글자를 선택함  */
+			a { text-decoration: none; }
+			a:visited { color: red; }
+			/* href 속성을 가지고 있는 a 태그의 뒤의 공간에 "- (href 속성)"을 추가*/
+			a:link::after { content: ' - ' attr(href); }
+			/* :link href 속성을 가지고 있는 a 태그를 선택함
+			   :visited 방문했던 링크를 가지고 있는 a 태그를 선택함 */
+		
+		/* input 태그 중에서 type 속성이 password가 아닌 태그의
+			background 속성에 red 키워드를 적용*/
+			input:not([type=password]) {
+			background: red;}
+			/* :not(선택자) 선택자를 반대로 적용함 */
+		
+		</style>
+</head>
+<body>
+	<h1><a>Nothing</a></h1>
+	<h1><a href=http://naver.com>한겨레</a></h1>
+	<h1><a href="http://www.w3.org/">W3C</a></h1>
+	<h1><a href="https://github.com/">Github</a></h1>
+
+	<div>
+		<input type="password" />
+		<input type="text" />
+		<input type="password" />
+		<input type="text" />
+	</div>
+	
+</body>
+</html>

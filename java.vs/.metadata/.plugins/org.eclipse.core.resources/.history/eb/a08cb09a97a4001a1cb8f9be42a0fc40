@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#btn').click(function(){
+			alert('버튼 클릭!');	
+		});
+		// 페이지 로드시 사용자의 반응이 아닌 코드에 의해서 click 이벤트를 실행
+		$('#btn').trigger("click");
+		$('#img1').one('click', function() {
+		alert('이미지는 한번만 클릭하세요');
+		});
+
+		
+	});
+</script>
+
+</head>
+<body>
+	<div id="my">
+		<input type="button" id="btn" value="버튼"> 
+		<img id="img1"	src='../images/dog.jpg'>
+	</div>
+
+</body>
+</html>

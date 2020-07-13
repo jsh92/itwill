@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		//text(), html() => 값 읽어오는 메서드
+		console.log("text()로 읽기 : "+$('#sp1').text());
+		//=> tag 제외하고 텍스트만 읽어옴
+		
+		console.log("html()로 읽기 : "+$('#sp1').html());
+		//=>태그까지 포함해서 읽어옴
+		
+		console.log("여러개 요소 text()로 읽기 : "+$('span').text());
+		//=> 여러 태그의 텍스트를 모두 결합해서 읽어옴
+		
+		console.log("여러개 요소 html()로 읽기 : "+$('span').html());
+		//=> 첫번째 태그이 값만 읽어옴
+		
+		$('#sp1').html('<u>html()로 쓰기</u>');
+		//=> 태그가 적용되어 표현됨
+		
+		$('span:eq(1)').text('<u>text()로 쓰기</u>');
+		//=> 태그가 그대로 화면에 출력됨
+	});
+</script> 
+</head>
+<body>
+	<span id="sp1"><b>test중</b></span><br>
+    <span><b>span 태그입니다</b></span><br>
+	
+	
+</body>
+</html>
+
+
+

@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+<style>
+div{
+    width: 220px; 
+    height: 58px; 
+    border: 1px solid gray; 
+    text-align:left;
+}
+</style>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	});
+</script>
+
+</head>
+<body>
+	<div>
+        <img src="../images/jQuery.jpg" alt="Hello, jQuery!">
+    </div>
+    <input id="btn1" type="button" value="이동" />
+	
+
+
+</body>
+</html>

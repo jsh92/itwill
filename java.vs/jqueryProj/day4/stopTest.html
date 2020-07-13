@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+<style type="text/css">
+        div { position: absolute; background-color:pink; left: 0px; top:60px;
+            width: 50px; height: 50px; margin: 5px; }
+</style>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#go').click(function(){
+			$('.block').animate({left:'+=100',top:'+=100'}, 2000);	
+		});
+		
+		$('#back').click(function(){
+			$('.block').animate({left:'-=100',top:'-=100'}, 2000);	
+		});
+		
+		$('#stop').click(function(){
+			$('.block').stop();	
+		});
+		
+	});
+</script>
+
+</head>
+<body>
+	<button id="go">Go</button> 
+    <button id="stop">STOP!</button>
+    <button id="back">Back</button>
+    <div class="block"></div>
+
+
+</body>
+</html>

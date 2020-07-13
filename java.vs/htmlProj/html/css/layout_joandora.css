@@ -1,0 +1,96 @@
+@charset "EUC-KR";
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #E7E7E7
+}
+
+header {
+	background-image: url("../assign/image/bg.png");
+	background-repeat: no-repeat;
+	width: 960px;
+	height: 280px;
+}
+
+header hroup {
+	position: relative;
+	top: 120px;
+	left: 600px;
+}
+
+hgroup h1 {
+	font-size: 3em;
+	color: #FFC;
+}
+
+hgroup h2 {
+	font-size: 2em;
+	color: #FF0;
+}
+
+.navi {
+	background: #008080;
+	height: 50px;
+	margin: 0;
+}
+
+navi ul {
+	float: left;
+	margin: 20px 0;
+}
+
+.navi ul li {
+	float: left;
+	margin: 0 55px;
+	font-size: 15px;
+}
+
+.navi a, .navi a:visited {
+	color: white;
+}
+
+.navi a:hover, .navi a:active, .navi a:focus {
+	text-shadow: 0px 2px 2px #000;
+	color: #FC0;
+}
+
+.sidebar1 {
+	float: right;
+	background: #DFD;
+	padding: 20px 10px;
+	width: 200px;
+	height: 550px;
+}
+
+.sidebar1 img {
+	margin-bottom: 5px;
+	border: 1px solid #CCC;
+	opacity: 0.6;
+}
+
+.sidebar1 img:hover {
+	border: 1px solid #000;
+	opacity: 1.0;
+}
+
+.content {
+	width: 720px;
+	float: left;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	background: #030;
+	color: white;
+}
+
+.banner {
+	margin: 0 10px 15px 10px;
+	padding: 0;
+}

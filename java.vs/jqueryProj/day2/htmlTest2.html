@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//$('h1').html('안녕');
+		$('div').html(function(index) {
+			return '<p>문단-' + index + '</p>';
+		});
+		$('h2').html(function(index, html) {
+			return '[' + html + ']'; //두번째 매개변수에 원래 있던 html의 내용이 들어감
+		});
+		
+		$('h1').each(function(index, item){
+			return $(this).html('하이');
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>h1태그1</h1>
+	<h1>h1태그2</h1>
+	<div></div>
+	<div></div>
+	<div></div>
+	<h2>제목1</h2>
+	<h2>제목2</h2>
+	<h2>제목3</h2>
+</body>
+</html>

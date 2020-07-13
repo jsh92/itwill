@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#selLang').change(function(){
+			var str=$('#selLang option:selected').text();
+			$('#txtLang').val(str);
+			$('#result').html(str);
+		});
+	});
+</script> 
+</head>
+<body>
+	<select id="selLang">
+	    <option>jsp</option>
+	    <option>spring</option>
+	    <option>JQuery</option>
+	</select>
+	<br><br>
+	
+	<h3>선택된 값</h3>
+	<input type="text" id="txtLang" />
+	<span id="result"></span>
+		
+	
+	
+</body>
+</html>
+
+
+

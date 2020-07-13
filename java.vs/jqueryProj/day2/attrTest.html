@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){		
+		alert($('a').attr('href'));
+		
+		$('img:first').mouseover(function(){
+			$(this).attr('src','../images/magnum2.jpg');	
+		}).mouseout(function(){
+			$(this).attr('src','../images/magnum1.jpg');	
+		});
+		
+		$('#btnRemove').click(function(){
+			$('img:eq(1)').removeAttr('src');	
+		});
+		
+		$('#photos img').attr({border:'3', height:'100'})
+			.attr('title', function(idx){
+				return  (idx+1)+"번째 이미지입니다.";
+			});
+		
+		//each 이용
+		$('#photos img').each(function(idx, item){
+			$(this).attr('title', (idx+1)+"번째 이미지입니다.");
+		});
+		
+	});
+	
+</script>
+<style type="text/css">
+        img{width:200px;}
+    </style>
+</head>
+<body>
+<a href="http://www.naver.com/">네이버</a><br /><br />
+
+<img src="../images/magnum1.jpg" />
+<img src="../images/dog.jpg" alt="강아지" />
+<input id="btnRemove" type="button" value="src속성 제거" />
+
+   
+  <div id="photos">
+      <img src="../images/dog.jpg" />
+      <img src="../images/magnum1.jpg" />
+      <img src="../images/snow.jpg" />
+      <img src="../images/wood.JPG" />
+      <img src="../images/magnum2.jpg" />
+  </div>
+
+</html>

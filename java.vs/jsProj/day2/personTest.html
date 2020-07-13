@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* 메서드 내에서 자신의 속성을 출력하고 싶을 때는 this를 반드시 사용
+생략 불가
+ */
+ 	var arr = [10,20,30,40]; //배열
+ 	
+	var person = {
+ 			name:'홍길동',
+ 			age:20,
+ 			eat:function(food){
+ 				alert(this.name+"이 " + food +"를 먹는다");
+ 			}
+ 	}; //객체
+	
+ 	person.eat('밥');
+ 	
+ 	var str="";
+ 	for(var property in person){
+ 		str+='키 - ' + property +", 속성 - " + person[property]+"\n"; 
+ 	}
+ 	
+ 	alert(str);
+</script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="../css/html5_Table.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table align="center" width="800" border="1" cellspacing="0" > 
+	<h1 align="center" class="h1">입 사 지 원 서</h1>
+	<table border="1 solid" id="firstT" margin="0">
+		<tr>
+		 	<th>구분</th>
+		 	<th>지원분야</th>
+		 	<th>희망연봉</th>
+		</tr>
+		<tr>
+		 <td>내용</td>
+		 <td></td>
+		 <td></td>
+		</tr>
+	</table>
+	
+	
+	
+</table>
+
+</body>
+</html>

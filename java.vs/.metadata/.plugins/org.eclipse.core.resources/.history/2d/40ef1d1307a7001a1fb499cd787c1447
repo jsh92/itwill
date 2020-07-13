@@ -1,0 +1,5 @@
+package com.itWill.book.model;
+
+public class bookDTO {
+
+}

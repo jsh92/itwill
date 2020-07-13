@@ -1,0 +1,180 @@
+@charset "EUC-KR";
+/* layout_flower.css */
+body {
+	background-image: url("../image/background.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: µ∏øÚ;
+}
+
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+	background: white;
+	border: 1px solid #ccc;
+}
+
+#topbanner {
+	height: 195px;
+	background-image: url("../image/topbg3.png");
+	background-repeat: no-repeat;
+	background-color: #ebdaac;
+}
+
+nav {
+	background: #C51A3A;
+	height: 50px;
+	overflow: hidden;
+}
+
+nav ul {
+	float: left;
+	margin: 15px 0;
+}
+
+nav ul li {
+	float: left;
+	margin: 0 15px;
+}
+
+nav ul li a, nav ul li a:visited {
+	font-weight: 600; /* ±€¿⁄∏¶ æ‡∞£ ¡¯«œ∞‘ (400:∫∏≈Î, 900:¡¯«‘) */
+	color: white;
+	text-shadow: 0 0.5px 0.5px red;
+	padding: 15px 10px;
+}
+
+nav ul li a:hover {
+	color: red;
+	background: white;
+	text-shadow: 0 0.5px 1px white;
+	border-radius: 10px 10px 0 0; /* ¿≠∫Œ∫–∏∏ µ’±€∞‘ √≥∏Æ */
+}
+
+#shop {
+	float: left;
+	width: 40%;
+	margin: 1.5%;
+}
+
+#intro {
+	float: left;
+	width: 50%;
+	margin-top: 25px;
+	padding: 10px;
+}
+
+#customer {
+	clear: both;
+	float: left;
+	width: 23%;
+	margin-left: 1.7%;
+}
+
+#main_section {
+	float: left;
+	width: 75%;
+}
+
+footer {
+	clear: both;
+	height: 50px;
+	border-top: 1px solid #ccc;
+}
+
+.sub {
+	float: left;
+	width: 30.6%;
+	border: 1px dotted #2a2399;
+	border-radius: 10px;
+	height: 200px;
+	margin-left: 1.9%;
+	margin-bottom: 15px;
+}
+
+#shop img {
+	width: 100%;
+}
+
+#intro>h1 {
+	font-weight: 600;
+	font-size: 1.2em;
+	margin: 15px 0;
+	font-family: µ∏øÚ;
+}
+
+#intro>p {
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: πŸ≈¡;
+	color: #f30;
+}
+
+#customer h1 {
+	background: #e66c6d;
+	color: white;
+	font-size: 1.2em;
+	padding: 10px;
+}
+
+#customer ul {
+	list-style: square;
+}
+
+#customer ul li {
+	font-size: 0.9em;
+	line-height: 25px;
+}
+
+#choice1 {
+	background-image: url("../image/bg1.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#choice2 {
+	background-image: url("../image/bg2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#choice3 {
+	background-image: url("../image/bg3.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.sub hgroup{
+	background: rgba(255,255,255,0.6);
+	text-align: right;
+	margin-top: 120px;
+	width: 95%;
+}
+
+.sub hgroup h1{
+	color: #936;
+	font-weight: 600;
+	font-family: πŸ≈¡;
+	font-size: 1.5em;
+}
+.sub hgroup h2{
+	color: #06f;
+	font-weight: 600;
+	font-family: πŸ≈¡;
+	font-size: 1em;
+}
+footer ul li a{
+	float: left;font-size: 0.8em;
+	color: #222;
+	padding: 15px 5px;
+	
+}
+footer ul{
+	margin: 0;
+}
+footer p{
+	float: right;
+	color: #222;
+	font-size: 0.8em;
+	margin-right: 10px;
+}

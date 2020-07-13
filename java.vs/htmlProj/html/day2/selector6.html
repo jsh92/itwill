@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 자식 선택자 */
+	#header > h1{
+		color:blue;
+	}
+	
+	#section > h1{
+		color: green;
+	}
+	
+	/* table > tr> th {
+		color: red;
+	} */
+	
+	table > tbody > tr> th {
+		color: red;
+	}
+	
+	table  tr> td {
+		color: orange;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur </p>
+    </div>
+	
+	<table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Region</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>서울특별시 강남구 역삼동</td>
+        </tr>
+    </table>
+</body>
+</html>

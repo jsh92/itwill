@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selectorTest1.html</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('*').css('font-size', '1.0em');  //전체 선택자		
+		$('h1').css('background-color','skyblue'); //태그 선택자
+		$('#ph1').css('color','red'); //아이디 선택자로 선택
+		$('.ph').css('background','pink'); //클래스 선택자로 선택
+		$('span.ph').css('color','blue'); //span태그에 ph클래스가 적용된 태그선택
+		$('.ph.red').css('border','3px solid green'); 
+		//=>ph클래스와 red 클래스가 모두 적용된 태그 선택
+		//두 클래스 속성을 모두 갖는 문서 객체를 선택 - 두 클래스 선택자를 붙여서 사용
+		
+		$('h1, h2').css('font-style','italic');
+		//=> h1, h2 태그 모두 선택
+	});	
+</script>
+</head>
+<body>
+<h1>아이디 선택자</h1>
+<p id='ph1'>문단</p>
+
+<h2>클래스 선택자</h2>
+<p class='ph'>문단1</p>
+<p class='ph red'>문단2</p>
+<span class='ph'>안녕</span>
+
+</body>
+</html>
+

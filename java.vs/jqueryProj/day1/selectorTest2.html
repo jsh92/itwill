@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div > *').css("border","2px solid green");
+		//=>div의 자식인 모든 태그 선택
+		
+		$('div *').css("background","pink");
+		//=>div의 후손인 모든 태그 선택
+		
+	});
+	
+</script>
+</head>
+<body>
+	<div>
+		<div>
+			<span>프로그래밍 언어</span>
+		</div>
+		<ul>
+			<li>spring</li>
+			<li>jsp</li>
+			<li>jquery</li>
+		</ul>
+	</div>
+
+</body>
+</html>

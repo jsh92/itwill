@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>labelTest.html</title>
+</head>
+<body>
+	<form action="a.jsp" method="get">
+		<fieldset>
+			<legend>기본 정보</legend>
+			<label for="userid">아이디 : </label>
+			<input type="text" name="userid" id="userid" 
+				placeholder="아이디 입력" autofocus="autofocus"><br>
+			<label for="name">이름 : </label>
+			<input type="text" name="name" id="name" value="홍길동"
+				readonly="readonly"><br>
+			<label for="psswd">비밀번호 :</label> 
+			<input type="password" name="pwd" id="psswd"
+				required="required"><br>
+		</fieldset>
+		<fieldset>
+			<legend>추가 정보</legend>
+			과일 : <input type="checkbox" name="fruit" value="1" id="apple">
+			<label for="apple">사과</label>
+			 <input type="checkbox" name="fruit" value="2" id="pear">
+			 <label for="pear">배</label>
+			<br> 
+			성별 : 
+			<label><input type="radio" name="gender" value="M">남자</label> 
+			<label><input type="radio" name="gender" value="F">여자</label>			
+		</fieldset>
+		<br>
+		<fieldset>
+			<input type="submit" value="전송">
+		</fieldset>
+	</form>			 
+</body>
+</html>
+
+
+

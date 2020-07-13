@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var timerId;
+	
+	function startTime(){
+		timerId = setInterval("clock()", 1000);
+	}
+	
+	function stopTime(){
+		clearInterval(timerId);
+	}
+	
+	function clock(){
+		today = new Date();
+		document.getElementById("curTime").innerHTML 
+			= "<b>"+today.toLocaleString()+"</b>";
+			
+		/* document.getElementById("curTime").innerText 
+			= "<b>"+today.toLocaleString()+"</b>"; */
+	}
+		
+</script>
+</head>
+<body>
+<H2> setInterval 과 clearInterval 예 </H2>	
+<FORM>
+	<INPUT TYPE="button" VALUE="시간 표시" onClick="startTime()">
+	<INPUT TYPE="button" VALUE="시간 중지" onClick="stopTime()"><br><br>
+</FORM>
+
+<div id="curTime"></div>
+
+</body>
+</html>

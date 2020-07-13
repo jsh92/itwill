@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function rateCal() {
+		var number = window.document.fm.dollor.value;
+		var res = number * 1183.5;
+		document.fm.result.value=res;
+	}
+
+</script>
+</head>
+<body>
+	<h1>환율 계산</h1>
+	<hr>
+	<form name="fm">
+	미국 달러입력 <input type="text" name="dollor" size="20">
+	<input type="button" value="환율계산" onclick="rateCal();">
+	한국 원화<input type="text" name="result" size="10">
+	
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>varTest.html</title>
+<script type="text/javascript">
+	var a, b;  //변수 선언
+	a=10;
+	b=20;
+	
+	result=a+b; //변수를 선언하지 않고도 사용 가능
+	
+	var str="java script!!";
+	
+	document.write("a="+a+",b="+b+", result="+result+"<br>");
+	document.write("str="+str+"<br>");
+	
+	str=3.14;
+	document.write("값 변경 후 str="+str+"<br><br><hr>");
+	
+	var global = 100;  //전역 변수
+	
+	//함수 정의
+	function testFunc(){
+		var local = 7;  //지역변수
+		
+		document.write("함수 내에서 global="+global+", local="+local+"<br>");
+	}
+	
+	testFunc();  //함수 호출
+	
+	document.write("함수 밖에서 global:"+global+"<br>");
+	document.write("함수 밖에서 local:"+local+"<br>");  //error
+	document.write("함수 밖에서 global:"+global+"<br>"); //error 이후 부터는 작동을 안한다
+	
+</script>
+</head>
+<body>
+	<h1>변수</h1>
+</body>
+</html>

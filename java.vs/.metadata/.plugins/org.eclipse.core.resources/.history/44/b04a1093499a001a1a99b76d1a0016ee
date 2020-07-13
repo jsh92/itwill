@@ -1,0 +1,73 @@
+package com.thread.day1;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class JoinTest {
+
+	public static void main(String[] args) {
+		MyThread6 th = new MyThread6();
+		th.setDaemon(true); //데몬 쓰레드 : 일반 쓰레드가 모두 종료되면 
+		//th 은 강제적으로 자동 종료
+		//start()전에 지정해야 함
+
+		th.start();
+		
+		MyRunnable4 r = new MyRunnable4();
+		Thread th2 = new Thread(r);
+		th2.start();
+		
+		for(int i=0;i<100;i++) {
+			System.out.print(i+" ");
+			
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}//for
+
+		System.out.println("main 종료");
+	}
+
+}
+
+class MyThread6 extends Thread{
+	
+	@Override
+	public void run() {
+		SimpleDateFormat sdf 
+			= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		
+		while(true) {
+			Date d=new Date();
+			String str=sdf.format(d);
+			
+			System.out.println("\n\n"+str);
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}//while
+	}
+}
+
+class MyRunnable4 implements Runnable{
+
+	@Override
+	public void run() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자 입력!");
+		int num=sc.nextInt();
+		
+		int sum=0;
+		for(int i=1;i<=num;i++) {
+			sum+=i;
+		}
+		
+		System.out.println("\n\n1 ~ "+ num +"까지의 합:"+ sum);
+	}
+	
+}

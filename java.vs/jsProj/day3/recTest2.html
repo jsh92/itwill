@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//생성자 함수를 선언
+		function Rectangle(w, h) {
+			// 변수를 선언
+			var width = w;
+			var height = h;
+			// 메서드를 선언
+			this.getWidth = function() {
+				return width;
+			};
+			this.getHeight = function() {
+				return height;
+			};
+			this.setWidth = function(w) {
+				if (w < 0) {
+					var msg = "길이는 음수일 수 없습니다.";
+					throw msg;
+				} else {
+					width = w;
+				}
+			};
+			this.setHeight = function(h) {
+				if (w < 0) {
+					var msg = "길이는 음수일 수 없습니다.";
+					throw msg;
+				} else {
+					height = h;
+				}
+			};
+		}
+		Rectangle.prototype.getArea = function() {
+			return this.getWidth() * this.getHeight();
+		};
+		
+		// 생성자 함수를 선언
+		function Square(length) {
+		this.base = Rectangle;
+		this.base(length, length);
+		}
+		Square.prototype = Rectangle.prototype;
+		Square.prototype.constructor = Square;
+		// 변수를 선언
+		var rectangle = new Rectangle(5, 7);
+		var square = new Square(5);
+		alert(rectangle.getArea() + ' , ' + square.getArea());
+		
+		
+		try {
+			// 변수를 선언
+			var rectangle = new Rectangle(5, 7);
+			//rectangle.setWidth(-2);
+			// 출력
+			alert('AREA: ' + rectangle.getArea());
+		} catch (e) {
+			alert(e);
+			console.log("예외발생 : " + e);
+		}
+		
+		
+		
+		
+	</script>
+</body>
+</html>

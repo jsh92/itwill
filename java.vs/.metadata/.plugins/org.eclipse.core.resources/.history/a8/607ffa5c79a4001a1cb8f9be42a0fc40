@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').on('click',function(){
+			$('#div1').html($(this).text()+"클릭함!");	
+		});
+		
+		$('button').on({mouseover:function(){
+			$(this).css('background','skyblue');
+		}, mouseout:function(){
+			$(this).css('background','');
+		}});
+	});
+</script>
+
+</head>
+<body>
+	<button>버튼1</button><br>
+	<button>버튼2</button><br>
+	<button>버튼3</button><br>
+	
+	<div id="div1"></div>
+	
+
+
+
+</body>
+</html>

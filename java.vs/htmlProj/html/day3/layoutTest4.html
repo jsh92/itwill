@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	#wrap{
+		width:600px;
+		margin: 0 auto;
+	}
+	#leftCon{
+		width: 33%;
+		height: 150px;
+		background: red;
+		float: left;
+	}
+	#rightCon{
+		width: 33%;
+		height: 150px;
+		background: green;
+		float: right;
+	}
+	#centerCon{
+		width: 33%;
+		height: 150px;
+		float: left;
+	}
+	#box1{
+		width: 49%;
+		background: pink;
+		float: left;
+		height: 50%;
+	}
+	#box2{
+		width: 49%;
+		background: pink;
+		float: left;
+		height: 50%;
+	}
+	#box3{
+		width: 100%;
+		background: yellow;
+		float: left;
+		height: 50%;
+	}
+	#footer{
+		width: 600px;
+		height: 50px;
+		background: blue;		
+	}
+	#container{
+		overflow: hidden;
+	}
+	#header{
+		width: 100%;
+		background: orange;
+		height: 50px;
+	}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+	   	header
+	</div>
+	<div id="container">
+		<div id="leftCon">
+		   leftCon
+		</div>
+		<div id="centerCon">
+		   <div id="box1">box1</div>
+		   <div id="box2">box2</div>
+		   <div id="box3">box3</div>
+		</div>
+		<div id="rightCon">
+		   rightCon
+		</div>
+	</div>
+	<div id="footer">
+	   	footer
+	</div>
+</div>
+
+</body>
+</html>

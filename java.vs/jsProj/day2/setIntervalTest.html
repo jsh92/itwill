@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>setIntervalTest.html</title>
+<script type="text/javascript">
+	function load(){
+		//clock();
+		setInterval("clock()", 1000); //1초마다 clock()함수를 실행
+		//=> 일정한 시간 간격으로 특정 작업을 수행할 때 사용
+		//setInterval("실행할 함수", 시간간격)
+	}
+	
+	function clock(){
+		var today = new Date();
+		window.document.myForm.myClock.value=today.toLocaleString();
+	}
+</script>
+</head>
+<body onload="load()">
+<FORM NAME="myForm">
+	<INPUT NAME="myClock" TYPE="Text" SIZE=30>
+</FORM>
+
+</body>
+</html>

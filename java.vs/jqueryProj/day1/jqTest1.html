@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jqTest1.html</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("div").click(function(){
+			$(this).hide();//this는 이벤트가 발생한 객체
+		});
+	});
+	
+	//$(선택자).메서드();
+	
+</script>
+</head>
+<body>
+	<div>1.클릭하면 사라짐</div>
+	<div>2.클릭하면 사라짐</div>
+	<div>3.클릭하면 사라짐</div>
+	<div>4.클릭하면 사라짐</div>
+</body>
+</html>

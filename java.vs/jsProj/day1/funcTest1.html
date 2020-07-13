@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>funcTest1.html</title>
+<script type="text/javascript">
+	function add(n1, n2){
+		var result = n1 + n2;
+		
+		return result;
+	}
+	function change() {
+		document.getElementById("img1").style.border="5px solid red";
+	}
+</script>
+</head>
+<body onload="change()" >
+	<h1>함수 호출</h1>
+	
+	<script type="text/javascript">
+		var num1=10, num2=30;
+		
+		var res = add(num1,num2);
+		document.write(res);
+		
+		//document.getElementById("img1").style.border="5px solid red";
+	</script>	
+	<hr>
+	<img src="../images/1.jpg" id="img1" >
+	
+</body>
+</html>
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('h1').filter(':odd').css('color','red');
+		
+		$('h3').filter(function(index) {
+			return index % 3 == 0;
+		}).css({
+			backgroundColor : 'black',
+			color : 'white'
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>h1태그 1</h1><!-- index : 0 -->
+	<h1>h1태그 2</h1><!-- index : 1 -->
+	<h1>h1태그 3</h1><!-- index : 2 -->
+	<h1>h1태그 4</h1><!-- index : 3 -->
+	<h1>h1태그 5</h1><!-- index : 4 -->
+	<br>
+	<h3>Header -0</h3>
+	<h3>Header -1</h3>
+	<h3>Header -2</h3>
+	<h3>Header -3</h3>
+	<h3>Header -4</h3>
+	<h3>Header -5</h3>
+</body>
+</html>

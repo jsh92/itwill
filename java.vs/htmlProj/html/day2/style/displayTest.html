@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>displayTest.html</title>
+<style type="text/css">
+	div{
+		border: 1px solid gray;
+		margin: 10px;
+	}
+	
+	div:nth-of-type(2) #box{
+		display: none;
+	}
+	div:nth-of-type(3) #box{
+		display: block;
+		opacity: 0.3;
+	}
+	div:nth-of-type(4) #box{
+		display: inline;
+	}
+	div:nth-of-type(5) #box{
+		display: inline-block;
+		background: rgba(255,0,0,0.3);
+	}
+	
+	#box{
+		width: 300px;
+		height: 50px;
+		margin: 10px;
+		background: orange;
+		color: blue
+	}
+	
+	/* 1) inline 을 적용한 코드는 width, height 속성이 지정되지 않음
+		또한 margin 속성이 div 태그의 좌우로만 지정됨
+ 
+ 	   2) inline-block 을 적용하면 width, height 속성을 지정할 수 있고
+ 		margin 속성이 상하좌우로 적용됨 */
+	
+	div:nth-of-type(6) #box{
+		visibility: hidden;
+	}
+	
+	/* 	display  : none - 태그가 화면에서 제거됨
+		visibility : hidden - 화면에서 보이지 않을 뿐, 영역은 차지함
+	 */
+	 
+	 
+</style>
+</head>
+<body>
+<div>
+    <span>Dummy</span>
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+    <span>Dummy</span>
+</div>
+<div>
+    <span>Dummy</span>
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+    <span>Dummy</span>
+</div>
+<div>
+    <span>Dummy</span>
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+    <span>Dummy</span>
+</div>
+<div>
+    <span>Dummy</span>
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+    <span>Dummy</span>
+</div>
+<div>
+    <span>Dummy</span>
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+    <span>Dummy</span>
+</div>
+<div>
+    <span>Dummy</span>
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+    <span>Dummy</span>
+</div>
+
+</body>
+</html>

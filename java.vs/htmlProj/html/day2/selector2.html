@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 아이디 선택자 */
+	#wrap{
+		background: pink;
+	}
+	
+	/* 클래스 선택자 */
+	.item{
+		color: blue;
+	}
+	.select{
+		border: 1px solid red;
+	}
+	
+	h1.item{  /* h1태그 중 item 클래스가 적용된 요소 선택*/
+		background: orange;
+	}
+	/* class 속성이 서로 다른 태그에 적용된다면, 
+	      태그 선택자와 클래스 선택자를 함께 사용해 더 정확하게 태그를 선택할 수 있다
+	 */
+</style>
+</head>
+<body>
+	<h1>h1</h1>
+	<p class="item select">p - 1</p>
+	<!-- 여러 개의 클래스 선택자 사용
+		 class 속성은 공백으로 구분해서 여러 클래스를 사용할 수 있음 -->
+	
+	<p class="item">p - 2</p>
+	<p>p - 3</p>
+	<h1 class="item">h1  태그</h1>
+	
+	<div>div - 1</div>
+	<div id="wrap">div - 2</div>
+	
+</body>
+</html>

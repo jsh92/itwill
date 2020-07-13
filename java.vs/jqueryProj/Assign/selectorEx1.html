@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var re="";
+		$('#bt').click(function(){
+			re=$('#te').val()+ "<br>";
+			re+=$('input[type=radio]:checked').val() + "<br>";
+			re+=$('input[type=checkbox]:checked').val()+ "<br>";
+			re+=$('#sel1 option:selected').val()+ "<br>";
+			re+=$('textarea').val()+ "<br>";
+		
+			
+			$('div').html(re);
+		});
+		
+		
+		
+	});
+
+</script>
+</head>
+<body>
+	text:<input type="text" size="20" id="te"><br>
+	Radio Group: <input id="rd1" type="radio" name="num" value="A">A
+	<input id="rd2" type="radio" name="num" value="B">B
+	<input id="rd3" type="radio" name="num" value="C">C<br>
+	Checkboxes:<input id="c1" type="checkbox" value="1" /><span>1</span>
+				<input id="c2" type="checkbox" value="2" /><span>2</span>
+				<input id="c3" type="checkbox" value="3"/><span>3</span><br>
+	Select option:<select id="sel1">
+					<option value="1">one</option>
+					<option value="2">two</option>
+					<option value="3">three</option>
+					</select><br>
+	textarea: <textarea name="textarea" rows="5" cols="30"></textarea>
+	<br>
+	<input type="submit" id="bt">
+	<hr>
+	<br>
+	<div></div>
+</body>
+</html>

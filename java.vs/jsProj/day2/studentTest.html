@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	//익명함수
+	var str = function(){
+		var output = 10;
+		alert(output);
+	} 
+	
+	str();
+	
+	var student={};
+	
+	//동적으로 속성 추가
+	student.name='홍길동';
+	student.hobby='축구';
+	student.toString=function(){
+		var output="";
+		for(var key in student){
+			if(key!='toString'){
+				output += key +"=>" + student[key]+"\n";
+			}
+		}
+		
+		return output;
+	}
+	
+	alert(student.toString());
+</script>
+</body>
+</html>

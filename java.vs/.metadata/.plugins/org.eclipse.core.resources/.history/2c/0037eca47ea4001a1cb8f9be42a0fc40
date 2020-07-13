@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('a').on('click', function() {
+			$(this).css('background', 'pink');
+		});
+
+		/* event.preventDefault()
+		-  a 태그를 클릭하면 무조건 기본 이벤트가 실행되어 페이지가 이동하므로  
+		a 태그의 기본 이벤트 제거
+		 */
+
+		$('div').click(function() {
+			$(this).css('background', 'skyblue');
+		});
+	});
+</script>
+<style>
+div, a {
+	padding: 10px;
+	border: 1px solid gray;
+}
+</style>
+
+</head>
+<body>
+	<div>
+		<a href="http://www.naver.com">naver</a>
+	</div>
+
+
+</body>
+</html>

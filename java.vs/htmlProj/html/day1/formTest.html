@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>formTest.html</title>
+</head>
+<body>
+	<h1>입력양식 태그</h1>
+	<!-- 
+	사용자 입력값을 받는 태그
+	반드시  form태그 안에 써야 함
+	
+	form 태그 - 사용자 입력값을 서버페이지로 전송
+	1) action 속성 - 서버 페이지 지정
+	2) method 속성 - 전송 방식 지정
+					get - 사용자 입력값을  url 뒤에 붙여서 전달
+					post - http header에 숨겨서 전달
+	 -->
+	<form action="a.jsp" method="get">
+		아이디 : <input type="text" name="userid" ><br>
+		비밀번호 : <input type="password" name="pwd"><br>
+		파일 : <input type="file" name="upfile"><br>
+		과일 : <input type="checkbox" name="fruit" value="1">사과
+		 <input type="checkbox" name="fruit" value="2">배
+		 <input type="checkbox" name="fruit" value="3">오렌지<br>
+		성별 : <input type="radio" name="gender" value="M">남자 
+		<input type="radio" name="gender" value="F">여자<br> 
+		hidden : <input type="hidden" name="no" value="10"><br>
+		
+		<textarea name="intro" rows="3" cols="20"></textarea><br>
+		<textarea name="memo" rows="5" cols="30">여러 줄 입력</textarea><br>
+		<select name="lang">
+			<option value="java">java</option>
+			<option value="jsp">jsp</option>
+			<option value="spring">spring</option>
+		</select>
+		<br>
+		<select name="db" multiple="multiple">
+			<optgroup label="database">
+				<option value="oracle">oracle</option>
+				<option value="mysql">mysql</option>
+				<option value="mssql">mssql</option>
+			</optgroup>
+			<optgroup label="web design">
+				<option value="photo">포토샵</option>	
+				<option value="illust">일러스트</option>
+			</optgroup>	
+		</select>
+		
+		<br><br>		
+		<input type="button" value="버튼">
+		<input type="submit" value="전송">
+		<input type="reset" value="취소">		
+		<input type="image" src="../image/login3.JPG"><br>
+		
+		<button>submit버튼</button>
+		<button type="button">버튼</button>
+		<button type="reset">reset버튼</button>
+	</form> 
+</body>
+</html>
+
+
+

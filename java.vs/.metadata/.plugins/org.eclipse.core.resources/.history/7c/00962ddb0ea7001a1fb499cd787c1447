@@ -1,0 +1,8 @@
+@charset "EUC-KR";
+
+h1.h1{
+	overflow: hidden;
+}
+table {
+	float: left;
+}

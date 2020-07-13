@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 상태 선택자 */	
+	input:enabled{  /* input 태그가 사용 가능할 경우에 스타일 적용*/
+		background: yellow;
+	}	
+	input:disabled{  /* input 태그가 사용 불가능할 경우에 스타일 적용*/
+		background: silver;
+	}
+	
+	input:focus{  /* input 태그에 초점이 맞추어진 경우에  스타일 적용 */
+		background: orange;
+	}
+	
+	input[type=checkbox]:checked + div{
+		background: pink;
+	}
+	
+	div{
+		width: 550px;
+		height: 120px;
+		border: 1px solid gray;
+	}
+</style>
+</head>
+<body>
+    <h2>Enabled</h2>
+    <input />
+    <h2>Disabled</h2>
+    <input disabled="disabled"/>
+    
+	<br><br>
+    <input type="checkbox" />
+    <div>
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+</body>
+</html>
