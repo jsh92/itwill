@@ -1,0 +1,31 @@
+package com.will.herb.board.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.will.herb.board.model.BoardService;
+
+@Controller
+public class ListController {
+	private static final Logger logger
+		=LoggerFactory.getLogger(ListController.class);
+	
+	@Autowired private BoardService boardService;
+	
+	@RequestMapping("/board/list.do")
+	public String list() {
+		//1
+		logger.info("글 목록");
+		
+		//2
+		
+		//3
+		
+		//4
+		
+	}
+	
+}

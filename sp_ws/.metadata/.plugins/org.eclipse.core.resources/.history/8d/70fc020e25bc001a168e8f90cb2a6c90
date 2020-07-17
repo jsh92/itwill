@@ -1,0 +1,18 @@
+package com.will.herb.board.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class WriteController {
+	private static final Logger logger
+		=LoggerFactory.getLogger(WriteController.class);
+	
+	@RequestMapping(value="/board/write.do")
+	public String write_get() {
+		
+	}
+	
+}

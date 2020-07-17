@@ -1,0 +1,9 @@
+package com.will.herb.board.model;
+
+import java.util.List;
+
+public interface BoardService {
+	public int insertBoard(BoardVO vo);
+	public List<BoardVO> selectAll();
+	
+}

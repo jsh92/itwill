@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.social.google.connect.GoogleConnectionFactory"/>
+<fullyQualifiedTypeName name="org.springframework.social.oauth2.OAuth2Parameters"/>
+<fullyQualifiedTypeName name="org.springframework.social.oauth2.GrantType"/>
+<fullyQualifiedTypeName name="org.springframework.social.oauth2.OAuth2Operations"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.springframework.util.LinkedMultiValueMap"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,6 @@
+package com.will.herb.board.model;
+
+public interface BoardDAO {
+	public int insertBoard(BoardVO vo);
+	
+}

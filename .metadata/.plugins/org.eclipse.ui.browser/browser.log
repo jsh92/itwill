@@ -1,0 +1,9 @@
+
+7월 15, 2020 02:00:36.668 NEW SESSION
+7월 15, 2020 02:00:36.669 [10600:2836:0715/020036.661:ERROR:socket_stream.cc(218)] Closing stream with result -2
+7월 15, 2020 08:58:07.455 [10600:2836:0715/085807.454:ERROR:socket_stream.cc(218)] Closing stream with result -2
+7월 17, 2020 21:44:21.436 [10600:2836:0717/214421.435:ERROR:socket_stream.cc(218)] Closing stream with result -2
+7월 17, 2020 21:44:21.687 [10600:10272:0717/214421.687:ERROR:get_updates_processor.cc(258)] PostClientToServerMessage() failed during GetUpdates with error 2
+7월 17, 2020 21:44:26.392 [10600:2836:0717/214426.392:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+7월 17, 2020 21:44:26.406 [10600:2836:0717/214426.396:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+7월 17, 2020 21:44:26.418 [10600:2836:0717/214426.397:ERROR:registration_request.cc(246)] Registration URL fetching failed.

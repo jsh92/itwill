@@ -1,0 +1,14 @@
+package com.will.herb.board.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class WriteController {
+	
+	@RequestMapping(value="/board/write.do")
+	public String write_get() {
+		
+	}
+	
+}
